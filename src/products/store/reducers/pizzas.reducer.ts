@@ -8,22 +8,7 @@ export interface PizzaState {
 }
 
 export const initialState: PizzaState = {
-  data: [
-    {
-      name: "Blazin' Inferno",
-      toppings: [
-        {
-          id: 9,
-          name: 'pepper'
-        },
-        {
-          id: 4,
-          name: 'chili'
-        }
-      ],
-      id: 1
-    }
-  ],
+  data: [],
   loaded: false,
   loading: false
 };
@@ -38,10 +23,12 @@ export function reducer(state = initialState, action: fromPizzas.PizzasAction): 
     }
 
     case fromPizzas.LOAD_PIZZAS_SUCCESS: {
+      const data = action.payload;
       return {
         ...state,
         loading: false,
-        loaded: true
+        loaded: true,
+        data
       };
     }
 
