@@ -76,32 +76,12 @@
       "name": "Seaside Surfin'",
       "toppings": [
         {
-          "id": 6,
-          "name": "mushroom"
-        },
-        {
-          "id": 2,
-          "name": "bacon"
-        },
-        {
           "id": 1,
           "name": "anchovy"
         },
         {
-          "id": 8,
-          "name": "onion"
-        },
-        {
-          "id": 11,
-          "name": "sweetcorn"
-        },
-        {
-          "id": 9,
-          "name": "pepper"
-        },
-        {
-          "id": 5,
-          "name": "mozzarella"
+          "id": 2,
+          "name": "bacon"
         }
       ],
       "id": 2
